@@ -1,84 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Kaio Almeida</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700&display=swap" rel="stylesheet">
-    <!-- Dev Icons Fonts-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <!-- CSS do Projeto-->
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaio Almeida — Software Engineer</title>
+  <meta name="description" content="Personal site and portfolio of Kaio Almeida.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
 </head>
-
 <body>
-    <main id="container">
 
-        <aside id="bio-container">
-            <h2>Kaio Almeida</h2>
-            <img id="bio-image" src="img/kaioalmeida.jpg" alt="Kaio Almeida">
-            <p>Olá! Meu nome é Kaio Almeida esse é meu portfólio e sou um <span class="highlight">Desenvolvedor Back-end</span> : )</p>
-            <p id="welcome-text">Seja bem-vindo!</p>
-            <ul id="social-container">
-                <li><a href="https://www.facebook.com/profile.php?id=100050047666941" target="_blank"> <ion-icon name="logo-facebook"></ion-icon></a></li>
-                <li><a href="https://www.linkedin.com/in/almeida-kaio/" target="_blank"> <ion-icon name="logo-linkedin"></ion-icon></a></li>
-                <li><a href="https://www.instagram.com/kazzyn7/" target="_blank"> <ion-icon name="logo-instagram"></ion-icon></a></li>
-            </ul>
-            <div id="email-container">
-                <ion-icon name="mail-outline"></ion-icon><a href="mailto:kaiohsilva04@gmail.com">kaiohsilva04@gmail.com</a> 
-            </div>
-        </aside>
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="/" class="brand">kaio<span class="accent">.</span>almeida</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/" class="nav-link active">Home</a></li>
+          <li><a href="/posts/" class="nav-link">Posts</a></li>
+          <li><a href="/resume/" class="nav-link">Resume</a></li>
+          <li>
+            <button class="theme-toggle" aria-label="Toggle theme">☀️</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <section id="about-container">
-            <h1 id="name">Kaio Almeida</h1>
-            <p id="title"><span class="highlight">Desenvolvedor Back-end</span></p>
-            <p class="description">Graduando em Ciência da Computação, sou um Desenvolvedor <span class="highlight">comprometido</span> em criar <br>soluções <span class="highlight">inovadoras</span> e <span class="highlight">impactantes</span>, desde a definição da regra de negócio <br>até o deploy da solução.</p>
-            <p class="description">Gosto de atuar no <span class="highlight">Back-end</span> da solução, e sou um entusiasta de desenvolvimento de sistemas e tecnologias, busco me manter em um <span class="highlight">constante aprendizado</span>, afim de cada dia ter uma <span class="highlight">melhor versão de mim mesmo!</span></p>
-            <a href="https://github.com/kaioa1meida" id="btn-project"><ion-icon name="share-social-outline"></ion-icon> <span>Ver Projetos</span></a>
-            <h2 id="skills-section-title">Minhas Skills</h2>
-            <p class="description">Conheça as principais tecnologias que domino:</p>
-            <div id="skills-container">
-                <div class="skills-box">
-                    <p class="skills-title">Languages</p>
-                    <i class="devicon-java-plain colored"></i>
-                    <i class="devicon-kotlin-plain colored"></i>
-                    <i class="devicon-python-plain colored"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Databases</p>
-                    <i class="devicon-mysql-plain colored"></i>
-                    <i class="devicon-postgresql-plain colored"></i>
-                    <i class="devicon-mongodb-plain colored"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Frameworks</p>
-                    <i class="devicon-spring-plain colored"></i>
-                    <i class="devicon-grails-plain colored"></i>
-                    <i class="devicon-django-plain"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Web Servers</p>
-                    <i class="devicon-tomcat-line colored"></i>
-                    <i class="devicon-apache-plain-wordmark"></i>
-                    <i class="devicon-nginx-plain colored"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Tools</p>
-                    <i class="devicon-linux-plain colored"></i>
-                    <i class="devicon-gradle-plain-wordmark"></i>
-                    <i class="devicon-docker-plain colored"></i>
-                    <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
-                </div>
-            </div>
-        </section>
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      
+      <!-- Hero / Masthead -->
+      <section class="hero">
+        <div class="hero-profile">
+          <div>
+            <h1 class="hero-title">Kaio Almeida<span class="accent">.</span></h1>
+            <p class="hero-tagline">Software Engineer @ iFood · Computer Science Student</p>
+          </div>
+          <img src="img/profile-photo.jpg" alt="Kaio Almeida" class="avatar">
+        </div>
 
-    </main>
-    <!-- Ion Icons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <div class="hero-bio">
+          <p>
+            Software Engineer and Computer Science student with <strong>4+ years of experience</strong> across Backend Engineering and Information Security.
+          </p>
+          <p>
+            Currently at <strong>iFood</strong>, building cloud-native solutions that automate critical workflows, reinforce compliance and auditing, and boost production reliability using <strong>Kotlin</strong>, <strong>Golang</strong>, <strong>Python</strong>, <strong>AWS</strong>, <strong>GCP</strong>, <strong>Kubernetes</strong>, and <strong>Databricks</strong>.
+          </p>
+          <p>
+            Passionate about engineering resilient distributed architectures, DevSecOps automation at scale, and high-standard observability.
+          </p>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links">
+          <a href="https://github.com/kaioa1meida" target="_blank" rel="noopener noreferrer" class="social-pill">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/kaioa1meida/" target="_blank" rel="noopener noreferrer" class="social-pill">
+            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.65 1.65 0 1 0 0 3.3 1.65 1.65 0 0 0 0-3.3z"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:kaiohsilva04@gmail.com" class="social-pill">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Email
+          </a>
+        </div>
+      </section>
+
+      <!-- Latest Posts Section -->
+      <section style="margin-bottom: 56px;">
+        <div class="section-header">
+          <h2 class="section-title">Latest Posts</h2>
+          <a href="/posts/" class="section-link">View all →</a>
+        </div>
+        <ul class="post-ledger">
+          <li class="ledger-item">
+            <a href="/posts/welcome-to-my-new-site/" class="ledger-link">
+              <span class="ledger-title">Welcome to my personal site & engineering blog</span>
+              <span class="ledger-meta">Sep 21, 2026</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Main Skills Overview -->
+      <section>
+        <div class="section-header">
+          <h2 class="section-title">Core Technologies & Domains</h2>
+          <a href="/resume/" class="section-link">View full resume →</a>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3 class="skill-category">Languages</h3>
+            <p class="skill-tags">Kotlin, Java, Golang, Python, SQL, Bash</p>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-category">Cloud & Infra</h3>
+            <p class="skill-tags">AWS, GCP, Kubernetes, Terraform, Docker</p>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-category">Architecture & Security</h3>
+            <p class="skill-tags">RESTful APIs, Microservices, DevSecOps, Observability, CI/CD</p>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-category">Databases & Data</h3>
+            <p class="skill-tags">PostgreSQL, MySQL, MongoDB, Redis, Databricks</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <span>© 2026 Kaio Almeida.</span>
+      <ul class="footer-links">
+        <li><a href="https://github.com/kaioa1meida" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/kaioa1meida/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="mailto:kaiohsilva04@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
 </body>
 </html>
